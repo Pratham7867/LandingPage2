@@ -1,0 +1,71 @@
+<html>
+
+<head>
+    <title> Flex box </title>
+    <style>
+        .container {
+            height: 344px;
+            width: 100%;
+            border: 2px solid black;
+            display: flex;/* Initialize the container as a flax box  */
+            /* Flex properties of container*/
+            /* flex-direction: row;(default value is row ) */
+            /* flex-direction: column;
+            flex-direction: row-reverse;
+            flex-direction: column-reverse; */
+            /* flex-wrap: wrap; */
+            /* flex-wrap: wrap-reverse; */
+            /* flex-flow: row-reverse wrap; */
+            /* justify-content: center;
+            justify-content: space-between; */
+            /* justify-content: space-evenly;
+            justify-content: space-around; */
+            /* align-items: center;
+            align-items: flex-end;
+            align-items: ; */
+        }
+
+        .item {
+            background-color: tomato;
+            border: 2px solid blue;
+            margin: 10;
+            padding: 3px;
+            width: 150px;
+            height: 150px;
+        }
+        #item1{
+            order: 2;
+            flex-grow: 3;
+        }
+        #item2{
+            /* order: 1; */
+            /* flex-grow: 3; */
+            /* flex-shrink: 3; */
+            flex-basis: 320px;
+        }
+        #item3{
+            flex: 2 2 340px;
+            align-self: center;
+        }
+        .container{
+            display: flex;
+            justify-content:space-around;
+            align-items: center;
+
+        }
+
+        
+    </style>
+</head>
+
+<body>
+    <h1>This is flex box </h1>
+    <div class="container">
+        <div class="item" id="itnem-1">First box</div>
+        <div class="item" id="itnem-2">Second box</div>
+        <div class="item" id="itnem-3">Third box</div>
+        <!-- <div class="item" id="itnem-4">Fourth box</div>
+        <div class="item" id="itnem-5">Fifth box</div>
+        <div class="item" id="itnem-6">Sixth box</div> -->
+    </div>
+</body>
